@@ -32,12 +32,18 @@ export default class Profile extends Component {
     if(!profile) {
       return <p>test</p>
     }
-
+    if(profile.username == "tom"){
     return (
       <div className="container">
         <img src="https://thechive.files.wordpress.com/2015/06/myspace-tom-spends-his-millions-taking-badass-pictures-30-photos-32.gif?w=500&h=343" />
       </div>
     ) 
-    console.log("profile:", profile)
+    }
+    return (
+      <div>
+        <h2>{ profile.username }</h2>
+        <img src="http://www.stlouiscondosandlofts.com/wp-content/uploads/person-placeholder.jpg" />
+      </div>
+    )
   }
 }
