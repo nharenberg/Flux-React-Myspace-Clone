@@ -10,7 +10,7 @@ const path = require('path');
 const morgan = require('morgan');
 
 // DB CONNECT
-require('mongoose').connect(MONGO_DB, err => {
+require('mongoose').connect(MONGO_URI, err => {
   if(err) throw err;
   console.log(`MongoDB connected to ${MONGO_URI}`);
 });
